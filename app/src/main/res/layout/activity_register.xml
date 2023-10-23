@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:orientation="vertical"
+    android:background="#89898A">
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Registro"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textColorHint="@color/black"
+            android:hint="Id Usuario" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/black"
+            android:hint="Escriba su nombre" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/black"
+            android:hint="Escriba su correo" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/black"
+            android:hint="Escriba su contraseña" />
+
+        <CheckBox
+            android:id="@+id/btnStatus"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Habilitado/Deshabilitado"
+            android:textSize="15dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:drawableRight="@drawable/baseline_app_registration_24"
+            android:text="Registrar" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:drawableRight="@drawable/baseline_search_24"
+            android:text="Buscar" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:drawableRight="@drawable/baseline_update_24"
+            android:text="Actualizar" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:drawableRight="@drawable/baseline_delete_24"
+            android:text="Eliminar" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Regresar" />
+
+        <Button
+            android:id="@+id/btnList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Lista de Usuarios" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

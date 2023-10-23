@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterBook"
+    android:orientation="vertical"
+    android:background="#89898A">
+
+    <TextView
+        android:id="@+id/tvbooktitle"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="LIBROS EL GOMEZ"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvbookMessage"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <EditText
+            android:id="@+id/etidbook"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Id Libro"
+            android:inputType="number"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/etbookname"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+            android:hint="Nombre Libro"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/etcost"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/black"
+            android:hint="Costo Libro" />
+
+        <CheckBox
+            android:id="@+id/btnbookStatus"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Disponible/ No Disponible"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btnbookRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/baseline_app_registration_24"
+            android:text="Registrar" />
+
+        <Button
+            android:id="@+id/btnbookSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/baseline_search_24"
+            android:text="Buscar" />
+
+        <Button
+            android:id="@+id/btnbookUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/baseline_update_24"
+            android:text="Actualizar" />
+
+        <Button
+            android:id="@+id/btnbookDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/baseline_delete_24"
+            android:text="Eliminar" />
+
+        <Button
+            android:id="@+id/btnbookBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Regresar" />
+
+    </LinearLayout>
+
+</LinearLayout>
